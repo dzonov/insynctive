@@ -1,0 +1,180 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #edf2f5;
+}
+
+.card {
+    width: 980px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid @greyHover;
+    .header {
+        padding: @space16 @space24;
+        background-color: @veryDarkBlue;
+        h1 {
+            color: #fff;
+            font-size: 20px;
+        }
+    }
+    .sub-header {
+        display: flex;
+        align-items: flex-end;
+        flex-flow: column wrap;
+        border-bottom: 1px solid @greyHover;
+        button {
+            margin: @space24;
+        }
+        .actions-header {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            .action {
+                height: @space64;
+                &:first-child {
+                    margin-left: 24px;
+                }
+                &:last-child {
+                    margin-right: 24px;
+                }
+                .title {
+                    height: @space16;
+                    font-size: 13px;
+                    color: @greyHover;
+                    padding-bottom: 3px;
+                }
+                .inputFields {
+                    height: @space32;
+                    color: @greyHover;
+                    position: relative;
+                    input {
+                        background-color: @grey;
+                        border: 0;
+                        height: @space32;
+                        padding-left: @space32;
+                        width: 207px;
+                    }
+                    select {
+                        background-color: @grey;
+                        border: 0;
+                        height: 34px;
+                        padding: 6px;
+                    }
+                    a {
+                        padding-right: @space24;
+                        i {
+                            color: black;
+                            font-size: @space24;
+                        }
+                    }
+                    i {
+                        position: absolute;
+                        top: 8px;
+                        left: 6px;
+                        font-size: 20px;
+                    }
+                }
+                .error {
+                    color: @red;
+                    font-size: 11px;
+                    font-style: italic;
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// Buttons
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    padding: 0 @space16;
+}
+
+.btn {
+    cursor: pointer;
+    &.small {
+        width: 98px;
+        height: 36px;
+    }
+    &.medium {
+        width: 134px;
+        height: 36px;
+    }
+    &.large {
+        width: 184px;
+        height: 36px;
+    }
+    &.normal {
+        color: @normalColor;
+        background-color: @normalBgColor;
+        &:hover {
+            color: @normalColor;
+            background-color: @normalHoverBgColor;
+        }
+    }
+    &.active {
+        color: @activeColor;
+        background-color: @activeBgColor;
+        &:hover {
+            color: @activeColor;
+            background-color: @activeHoverBgColor;
+        }
+    }
+    &.delete {
+        color: @deleteColor;
+        background-color: @deleteBgColor;
+        &:hover {
+            color: @deleteColor;
+            background-color: @deleteHoverBgColor;
+        }
+    }
+}
+
+[disabled] {
+    cursor: not-allowed;
+    color: @disabledColor;
+    background-color: @disabledBgColor;
+}
+
+// Table
+table {
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: @space24;
+    tr {
+        display: flex;
+        justify-content: space-between;
+        &:nth-child(even) {
+            background-color: @grey;
+        }
+        td {
+            padding-top: @space16;
+            padding-bottom: @space16;
+            &:first-child {
+                font-weight: bold;
+                padding-left: @space24;
+            }
+            &:last-child {
+                padding-right: @space24;
+            }
+            &:nth-of-type(2) {
+                color: @blue;
+                padding-left: 24px;
+            }
+            &:nth-of-type(3) {
+                color: @blue;
+            }
+            i {
+                color: @greyHover;
+                vertical-align: middle;
+                padding-right: @space24;
+            }
+            input {
+                vertical-align: middle;
+            }
+        }
+    }
+}

@@ -1,0 +1,309 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #edf2f5;
+}
+.card {
+  width: 980px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #bdc3c7;
+}
+.card .header {
+  padding: 16px 24px;
+  background-color: #34495e;
+}
+.card .header h1 {
+  color: #fff;
+  font-size: 20px;
+}
+.card .sub-header {
+  display: flex;
+  align-items: flex-end;
+  flex-flow: column wrap;
+  border-bottom: 1px solid #bdc3c7;
+}
+.card .sub-header button {
+  margin: 24px;
+}
+.card .sub-header .actions-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.card .sub-header .actions-header .action {
+  height: 64px;
+}
+.card .sub-header .actions-header .action:first-child {
+  margin-left: 24px;
+}
+.card .sub-header .actions-header .action:last-child {
+  margin-right: 24px;
+}
+.card .sub-header .actions-header .action .title {
+  height: 16px;
+  font-size: 13px;
+  color: #bdc3c7;
+  padding-bottom: 3px;
+}
+.card .sub-header .actions-header .action .inputFields {
+  height: 32px;
+  color: #bdc3c7;
+  position: relative;
+}
+.card .sub-header .actions-header .action .inputFields input {
+  background-color: #ecf0f1;
+  border: 0;
+  height: 32px;
+  padding-left: 32px;
+  width: 207px;
+}
+.card .sub-header .actions-header .action .inputFields select {
+  background-color: #ecf0f1;
+  border: 0;
+  height: 34px;
+  padding: 6px;
+}
+.card .sub-header .actions-header .action .inputFields a {
+  padding-right: 24px;
+}
+.card .sub-header .actions-header .action .inputFields a i {
+  color: black;
+  font-size: 24px;
+}
+.card .sub-header .actions-header .action .inputFields i {
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  font-size: 20px;
+}
+.card .sub-header .actions-header .action .error {
+  color: #e74c3c;
+  font-size: 11px;
+  font-style: italic;
+  display: none;
+}
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  padding: 0 16px;
+}
+.btn {
+  cursor: pointer;
+}
+.btn.small {
+  width: 98px;
+  height: 36px;
+}
+.btn.medium {
+  width: 134px;
+  height: 36px;
+}
+.btn.large {
+  width: 184px;
+  height: 36px;
+}
+.btn.normal {
+  color: #212121;
+  background-color: #ecf0f1;
+}
+.btn.normal:hover {
+  color: #212121;
+  background-color: #bdc3c7;
+}
+.btn.active {
+  color: #fff;
+  background-color: #3498db;
+}
+.btn.active:hover {
+  color: #fff;
+  background-color: #2980b9;
+}
+.btn.delete {
+  color: #fff;
+  background-color: #e74c3c;
+}
+.btn.delete:hover {
+  color: #fff;
+  background-color: #c0392b;
+}
+[disabled] {
+  cursor: not-allowed;
+  color: #bdc3c7;
+  background-color: #ecf0f1;
+}
+table {
+  width: 100%;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+table tr {
+  display: flex;
+  justify-content: space-between;
+}
+table tr:nth-child(even) {
+  background-color: #ecf0f1;
+}
+table tr td {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+table tr td:first-child {
+  font-weight: bold;
+  padding-left: 24px;
+}
+table tr td:last-child {
+  padding-right: 24px;
+}
+table tr td:nth-of-type(2) {
+  color: #3498db;
+  padding-left: 24px;
+}
+table tr td:nth-of-type(3) {
+  color: #3498db;
+}
+table tr td i {
+  color: #bdc3c7;
+  vertical-align: middle;
+  padding-right: 24px;
+}
+table tr td input {
+  vertical-align: middle;
+}
+html,
+body {
+  border: 0;
+  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  box-sizing: content-box;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+}
+input[type="checkbox"] {
+  margin: 0;
+}
