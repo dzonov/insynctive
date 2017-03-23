@@ -18,76 +18,100 @@ body {
 }
 .card .sub-header {
   display: flex;
-  align-items: flex-end;
-  flex-flow: column wrap;
-  border-bottom: 1px solid #bdc3c7;
+  justify-content: flex-end;
 }
 .card .sub-header button {
   margin: 24px;
 }
-.card .sub-header .actions-header {
-  display: flex;
+.card table {
+  font-size: 13px;
+  margin-bottom: 24px;
   width: 100%;
-  justify-content: space-between;
 }
-.card .sub-header .actions-header .action {
+.card table tr:nth-child(odd) {
+  background-color: #ecf0f1;
+}
+.card table tr th {
+  background-color: #fff;
+  border-bottom: 1px solid #bdc3c7;
+}
+.card table tr th:first-of-type {
+  padding-left: 24px;
+}
+.card table tr th:last-of-type {
+  padding-right: 24px;
+}
+.card table tr th .action {
   height: 64px;
 }
-.card .sub-header .actions-header .action:first-child {
-  margin-left: 24px;
-}
-.card .sub-header .actions-header .action:last-child {
-  margin-right: 24px;
-}
-.card .sub-header .actions-header .action .title {
+.card table tr th .action .title {
   height: 16px;
   font-size: 13px;
   color: #bdc3c7;
-  padding-bottom: 3px;
+  margin-bottom: 8px;
 }
-.card .sub-header .actions-header .action .inputFields {
+.card table tr th .action .inputFields {
   height: 32px;
   color: #bdc3c7;
   position: relative;
 }
-.card .sub-header .actions-header .action .inputFields input {
+.card table tr th .action .inputFields input {
   background-color: #ecf0f1;
   border: 0;
   height: 32px;
   padding-left: 32px;
-  width: 207px;
+  width: 203px;
 }
-.card .sub-header .actions-header .action .inputFields select {
+.card table tr th .action .inputFields select {
   background-color: #ecf0f1;
   border: 0;
   height: 34px;
   padding: 6px;
 }
-.card .sub-header .actions-header .action .inputFields a {
-  padding-right: 24px;
+.card table tr th .action .inputFields a {
+  margin-right: 24px;
 }
-.card .sub-header .actions-header .action .inputFields a i {
+.card table tr th .action .inputFields a i {
   color: black;
   font-size: 24px;
+  left: 8px;
 }
-.card .sub-header .actions-header .action .inputFields i {
+.card table tr th .action .inputFields i {
   position: absolute;
   top: 8px;
   left: 6px;
   font-size: 20px;
 }
-.card .sub-header .actions-header .action .error {
+.card table tr th .action .error {
   color: #e74c3c;
-  font-size: 11px;
+  font-size: 10px;
   font-style: italic;
   display: none;
 }
-[role="button"],
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button {
-  padding: 0 16px;
+.card table tr td {
+  padding: 16px 0;
+}
+.card table tr td:first-of-type {
+  font-weight: bold;
+  padding-left: 24px;
+}
+.card table tr td:last-of-type {
+  padding-left: 16px;
+}
+.card table tr td:nth-of-type(2) {
+  color: #3498db;
+}
+.card table tr td:nth-of-type(3) {
+  color: #3498db;
+}
+.card table tr td i {
+  color: #bdc3c7;
+  vertical-align: middle;
+  line-height: 1px;
+  padding-right: 24px;
+}
+.card table tr td input {
+  vertical-align: middle;
 }
 .btn {
   cursor: pointer;
@@ -132,44 +156,6 @@ button {
   cursor: not-allowed;
   color: #bdc3c7;
   background-color: #ecf0f1;
-}
-table {
-  width: 100%;
-  font-size: 13px;
-  margin-bottom: 24px;
-}
-table tr {
-  display: flex;
-  justify-content: space-between;
-}
-table tr:nth-child(even) {
-  background-color: #ecf0f1;
-}
-table tr td {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-table tr td:first-child {
-  font-weight: bold;
-  padding-left: 24px;
-}
-table tr td:last-child {
-  padding-right: 24px;
-}
-table tr td:nth-of-type(2) {
-  color: #3498db;
-  padding-left: 24px;
-}
-table tr td:nth-of-type(3) {
-  color: #3498db;
-}
-table tr td i {
-  color: #bdc3c7;
-  vertical-align: middle;
-  padding-right: 24px;
-}
-table tr td input {
-  vertical-align: middle;
 }
 html,
 body {
