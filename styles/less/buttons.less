@@ -1,0 +1,48 @@
+.btn {
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    padding: 0 @space16;
+    margin-right:@space16;
+    &.small {
+        width: 98px;
+        height: 36px;
+    }
+    &.medium {
+        width: 134px;
+        height: 36px;
+    }
+    &.large {
+        width: 184px;
+        height: 36px;
+    }
+    &.normal {
+        color: @normalColor;
+        background-color: @normalBgColor;
+        &:hover {
+            color: @normalColor;
+            background-color: @normalHoverBgColor;
+        }
+    }
+    &.active {
+        color: @activeColor;
+        background-color: @activeBgColor;
+        &:hover {
+            color: @activeColor;
+            background-color: @activeHoverBgColor;
+        }
+    }
+    &.delete {
+        color: @deleteColor;
+        background-color: @deleteBgColor;
+        &:hover {
+            color: @deleteColor;
+            background-color: @deleteHoverBgColor;
+        }
+    }
+}
+
+[disabled] {
+    cursor: not-allowed;
+    color: @disabledColor;
+    background-color: @disabledBgColor;
+}

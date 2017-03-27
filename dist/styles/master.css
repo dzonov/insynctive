@@ -1,3 +1,50 @@
+.btn {
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  padding: 0 16px;
+  margin-right: 16px;
+}
+.btn.small {
+  width: 98px;
+  height: 36px;
+}
+.btn.medium {
+  width: 134px;
+  height: 36px;
+}
+.btn.large {
+  width: 184px;
+  height: 36px;
+}
+.btn.normal {
+  color: #212121;
+  background-color: #ecf0f1;
+}
+.btn.normal:hover {
+  color: #212121;
+  background-color: #bdc3c7;
+}
+.btn.active {
+  color: #fff;
+  background-color: #3498db;
+}
+.btn.active:hover {
+  color: #fff;
+  background-color: #2980b9;
+}
+.btn.delete {
+  color: #fff;
+  background-color: #e74c3c;
+}
+.btn.delete:hover {
+  color: #fff;
+  background-color: #c0392b;
+}
+[disabled] {
+  cursor: not-allowed;
+  color: #bdc3c7;
+  background-color: #ecf0f1;
+}
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #edf2f5;
@@ -112,50 +159,6 @@ body {
 }
 .card table tr td input {
   vertical-align: middle;
-}
-.btn {
-  cursor: pointer;
-}
-.btn.small {
-  width: 98px;
-  height: 36px;
-}
-.btn.medium {
-  width: 134px;
-  height: 36px;
-}
-.btn.large {
-  width: 184px;
-  height: 36px;
-}
-.btn.normal {
-  color: #212121;
-  background-color: #ecf0f1;
-}
-.btn.normal:hover {
-  color: #212121;
-  background-color: #bdc3c7;
-}
-.btn.active {
-  color: #fff;
-  background-color: #3498db;
-}
-.btn.active:hover {
-  color: #fff;
-  background-color: #2980b9;
-}
-.btn.delete {
-  color: #fff;
-  background-color: #e74c3c;
-}
-.btn.delete:hover {
-  color: #fff;
-  background-color: #c0392b;
-}
-[disabled] {
-  cursor: not-allowed;
-  color: #bdc3c7;
-  background-color: #ecf0f1;
 }
 html,
 body {
