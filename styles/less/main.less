@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Material Icons', 'Roboto', sans-serif;
     background-color: @backgroundColor;
 }
 
@@ -9,7 +9,7 @@ body {
     background-color: #fff;
     border: 1px solid @greyHover;
     .header {
-        padding: @space16 @space24;
+        padding: 16px 24px;
         background-color: @veryDarkBlue;
         h1 {
             color: #fff;
@@ -20,12 +20,12 @@ body {
         display: flex;
         justify-content: flex-end;
         button {
-            margin: @space24;
+            margin: 24px;
         }
     }
     table {
         font-size: 13px;
-        margin-bottom: @space24;
+        margin-bottom: 24px;
         width: 100%;
         tr {
             &:nth-child(odd) {
@@ -41,55 +41,58 @@ body {
                     padding-right: 24px;
                 }
                 .action {
-                    height: @space64;
+                    height: 64px;
                     .title {
-                        height: @space16;
-                        font-size: 13px;
+                        height: 16px;
+                        font-size: 12px;
                         color: @greyHover;
-                        margin-bottom: @space8;
+                        margin-bottom: 8px;
                     }
                     .inputFields {
-                        height: @space32;
+                        height: 32px;
                         color: @greyHover;
                         position: relative;
                         input {
                             background-color: @grey;
                             border: 0;
-                            height: @space32;
-                            padding-left: @space32;
+                            height: 32px;
+                            padding-left: 32px;
                             width: 203px;
+                            font-size: 14px;
                         }
                         select {
                             background-color: @grey;
                             border: 0;
                             height: 34px;
                             padding: 6px;
+                            font-size: 14px;
                         }
                         a {
-                            margin-right: @space24;
+                            margin-right: 24px;
                             i {
                                 color: black;
-                                font-size: @space24;
-                                left: 8px;
+                                font-size: 24px;
+                                font-family: 'Material Icons';
                             }
                         }
                         i {
                             position: absolute;
                             top: 8px;
-                            left: 6px;
+                            left: 8px;
                             font-size: 20px;
+                            font-family: 'Material Icons';
                         }
                     }
                     .error {
                         color: @red;
-                        font-size: 10px;
+                        font-size: 12px;
                         font-style: italic;
                         display: none;
                     }
                 }
             }
             td {
-                padding: @space16 0;
+                padding: 16px 0;
                 &:first-of-type {
                     font-weight: bold;
                     padding-left: 24px;
@@ -107,7 +110,8 @@ body {
                     color: @greyHover;
                     vertical-align: middle;
                     line-height: 1px;
-                    padding-right: @space24;
+                    padding-right: 24px;
+                    font-family: 'Material Icons';
                 }
                 input {
                     vertical-align: middle;
