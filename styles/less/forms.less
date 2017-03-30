@@ -1,0 +1,70 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type="text"] {
+    background-color: @grey;
+    height: 32px;
+    max-height: 32px;
+    font-size: 14px;
+    padding-left: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    background-color: @grey;
+    height: 48px;
+    font-size: 14px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.textBox {
+    .title {
+        max-height: 16px;
+        font-size: 12px;
+        color: @greyHover;
+        margin-bottom: 4px;
+    }
+    .error {
+        max-height: 16px;
+        color: @red;
+        margin-top: 4px;
+        font-size: 12px;
+        font-style: italic;
+    }
+}
+
+.select {
+    background-color: @grey;
+    max-height: 32px;
+    font-size: 14px;
+    position: relative;
+    i {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        font-family: 'Material Icons';
+        cursor: default;
+    }
+    li {
+        width: 100%;
+        padding: 8px;
+        background-color: @grey;
+        cursor: default;
+        list-style: none;
+        box-sizing: border-box;
+        &:not(.selected) {
+            display: none;
+            &:hover {
+                background-color: @greyHover;
+            }
+        }
+        &:nth-child(2) {
+            border-top: 1px solid @greyHover;
+        }
+    }
+}

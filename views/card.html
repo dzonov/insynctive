@@ -23,71 +23,47 @@
             <table>
                 <tr>
                     <th>
-                        <div class="action">
+                        <div class="textBox">
                             <div class="title">
                                 <span>Employee</span>
                             </div>
-                            <div class="inputFields">
-                                <i class="material-icons">search</i>
-                                <input type="text">
-                            </div>
-                            <div class="error">
-                                <span>Error text shows here</span>
-                            </div>
+                            <input type="text">
+                            <i class="material-icons">search</i>
                         </div>
                     </th>
                     <th>
-                        <div class="action">
+                        <div class="textBox">
                             <div class="title">
                                 <span>Owner</span>
                             </div>
-                            <div class="inputFields">
-                                <input type="text" placeholder="click to sort" />
-                                <i class="material-icons">import_export</i>
-                            </div>
-                            <div class="error">
-                                <span>Error text shows here</span>
-                            </div>
+                            <input type="text" placeholder="click to sort">
+                            <i class="material-icons">import_export</i>
                         </div>
                     </th>
                     <th>
-                        <div class="action">
+                        <div class="textBox">
                             <div class="title">
                                 <span>Department</span>
                             </div>
-                            <div class="inputFields">
-                                <input type="text" placeholder="click to sort" />
-                                <i class="material-icons">import_export</i>
-                            </div>
-                            <div class="error">
-                                <span>Error text shows here</span>
-                            </div>
+                            <input type="text" placeholder="click to sort">
+                            <i class="material-icons">import_export</i>
                         </div>
                     </th>
                     <th>
-                        <div class="action">
+                        <div class="textBox">
                             <div class="title">
                                 <span>Date</span>
                             </div>
-                            <div class="inputFields">
-                                <select name="period">
-                            <option value="week">Last Week</option>
-                            <option value="month">Last Month</option>
-                            <option value="year">Last Year</option>
-                        </select>
-                            </div>
-                            <div class="error">
-                                <span>Error text shows here</span>
-                            </div>
+                            <ul class="select">
+                                <li class="selected" data-value="week">Last Week</li>
+                                <li data-value="month">Last Month</li>
+                                <li data-value="year">Last Year</li>
+                            </ul>
+                            <i class="material-icons">keyboard_arrow_down</i>
                         </div>
                     </th>
                     <th>
-                        <div class="action">
-                            <div class="title"></div>
-                            <div class="inputFields">
-                                <a href="#"><i class="material-icons">more_vert</i></a>
-                            </div>
-                        </div>
+                        <a href="#"><i class="material-icons">more_vert</i></a>
                     </th>
                 </tr>
                 <tr>
@@ -135,6 +111,10 @@
             </table>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../dist/scripts/master.js"></script>
+
 </body>
 
 </html>

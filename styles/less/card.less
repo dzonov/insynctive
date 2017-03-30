@@ -1,0 +1,104 @@
+.card {
+    font-family: 'Roboto', sans-serif;
+    width: 980px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid @greyHover;
+    .header {
+        padding: 16px 24px;
+        background-color: @veryDarkBlue;
+        h1 {
+            color: #fff;
+            font-size: 20px;
+        }
+    }
+    .sub-header {
+        display: flex;
+        justify-content: flex-end;
+        button {
+            margin: 24px;
+        }
+    }
+    table {
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        margin-bottom: 24px;
+        width: 100%;
+        tr {
+            &:nth-child(odd) {
+                background-color: @grey;
+            }
+            th {
+                background-color: #fff;
+                border-bottom: 1px solid @greyHover;
+                .textBox {
+                    position: relative;
+                    padding-right: 24px;
+                    input[type="text"] {
+                        padding-right: 32px;
+                        margin-bottom: 8px;
+                    }
+                    .select {
+                        width: 110px;
+                        margin-bottom: 8px;
+                        li {
+                            width: 120px;
+                            padding-right: 32px;
+                            height: 32px;
+                        }
+                    }
+                    i {
+                        top: 36px;
+                        right: 8px;
+                        position: absolute;
+                        color: @greyHover;
+                        vertical-align: middle;
+                        line-height: 1px;
+                        padding-right: 24px;
+                        font-family: 'Material Icons';
+                    }
+                }
+                a {
+                    i {
+                        margin-top: 16px;
+                        color: black;
+                        font-size: 24px;
+                        font-family: 'Material Icons';
+                    }
+                }
+                &:first-of-type {
+                    padding-left: 24px;
+                }
+                &:last-of-type {
+                    padding-right: 24px;
+                }
+            }
+            td {
+                padding: 16px 0;
+                &:first-of-type {
+                    font-weight: bold;
+                    padding-left: 24px;
+                }
+                &:last-of-type {
+                    padding-left: 16px;
+                }
+                &:nth-of-type(2) {
+                    color: @blue;
+                }
+                &:nth-of-type(3) {
+                    color: @blue;
+                }
+                i {
+                    color: @greyHover;
+                    vertical-align: middle;
+                    line-height: 1px;
+                    padding-right: 24px;
+                    font-family: 'Material Icons';
+                }
+                input {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}

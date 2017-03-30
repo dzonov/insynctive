@@ -46,11 +46,8 @@
   color: #bdc3c7;
   background-color: #ecf0f1;
 }
-body {
-  font-family: 'Material Icons', 'Roboto', sans-serif;
-  background-color: #edf2f5;
-}
 .card {
+  font-family: 'Roboto', sans-serif;
   width: 980px;
   margin: 0 auto;
   background-color: #fff;
@@ -72,6 +69,7 @@ body {
   margin: 24px;
 }
 .card table {
+  font-family: 'Roboto', sans-serif;
   font-size: 13px;
   margin-bottom: 24px;
   width: 100%;
@@ -83,61 +81,44 @@ body {
   background-color: #fff;
   border-bottom: 1px solid #bdc3c7;
 }
+.card table tr th .textBox {
+  position: relative;
+  padding-right: 24px;
+}
+.card table tr th .textBox input[type="text"] {
+  padding-right: 32px;
+  margin-bottom: 8px;
+}
+.card table tr th .textBox .select {
+  width: 110px;
+  margin-bottom: 8px;
+}
+.card table tr th .textBox .select li {
+  width: 120px;
+  padding-right: 32px;
+  height: 32px;
+}
+.card table tr th .textBox i {
+  top: 36px;
+  right: 8px;
+  position: absolute;
+  color: #bdc3c7;
+  vertical-align: middle;
+  line-height: 1px;
+  padding-right: 24px;
+  font-family: 'Material Icons';
+}
+.card table tr th a i {
+  margin-top: 16px;
+  color: black;
+  font-size: 24px;
+  font-family: 'Material Icons';
+}
 .card table tr th:first-of-type {
   padding-left: 24px;
 }
 .card table tr th:last-of-type {
   padding-right: 24px;
-}
-.card table tr th .action {
-  height: 64px;
-}
-.card table tr th .action .title {
-  height: 16px;
-  font-size: 12px;
-  color: #bdc3c7;
-  margin-bottom: 8px;
-}
-.card table tr th .action .inputFields {
-  height: 32px;
-  color: #bdc3c7;
-  position: relative;
-}
-.card table tr th .action .inputFields input {
-  background-color: #ecf0f1;
-  border: 0;
-  height: 32px;
-  padding-left: 32px;
-  width: 203px;
-  font-size: 14px;
-}
-.card table tr th .action .inputFields select {
-  background-color: #ecf0f1;
-  border: 0;
-  height: 34px;
-  padding: 6px;
-  font-size: 14px;
-}
-.card table tr th .action .inputFields a {
-  margin-right: 24px;
-}
-.card table tr th .action .inputFields a i {
-  color: black;
-  font-size: 24px;
-  font-family: 'Material Icons';
-}
-.card table tr th .action .inputFields i {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  font-size: 20px;
-  font-family: 'Material Icons';
-}
-.card table tr th .action .error {
-  color: #e74c3c;
-  font-size: 12px;
-  font-style: italic;
-  display: none;
 }
 .card table tr td {
   padding: 16px 0;
@@ -164,6 +145,73 @@ body {
 }
 .card table tr td input {
   vertical-align: middle;
+}
+* {
+  font-family: 'Roboto', sans-serif;
+}
+input[type="text"] {
+  background-color: #ecf0f1;
+  height: 32px;
+  max-height: 32px;
+  font-size: 14px;
+  padding-left: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+textarea {
+  background-color: #ecf0f1;
+  height: 48px;
+  font-size: 14px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.textBox .title {
+  max-height: 16px;
+  font-size: 12px;
+  color: #bdc3c7;
+  margin-bottom: 4px;
+}
+.textBox .error {
+  max-height: 16px;
+  color: #e74c3c;
+  margin-top: 4px;
+  font-size: 12px;
+  font-style: italic;
+}
+.select {
+  background-color: #ecf0f1;
+  max-height: 32px;
+  font-size: 14px;
+  position: relative;
+}
+.select i {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-family: 'Material Icons';
+  cursor: default;
+}
+.select li {
+  width: 100%;
+  padding: 8px;
+  background-color: #ecf0f1;
+  cursor: default;
+  list-style: none;
+  box-sizing: border-box;
+}
+.select li:not(.selected) {
+  display: none;
+}
+.select li:not(.selected):hover {
+  background-color: #bdc3c7;
+}
+.select li:nth-child(2) {
+  border-top: 1px solid #bdc3c7;
+}
+body {
+  background-color: #edf2f5;
 }
 html,
 body {
@@ -279,6 +327,9 @@ a img {
 :focus {
   outline: 0;
 }
+input {
+  border: 0;
+}
 [role="button"],
 input[type="submit"],
 input[type="reset"],
@@ -300,6 +351,17 @@ button {
 }
 input[type="checkbox"] {
   margin: 0;
+}
+textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+  box-shadow: none;
+}
+select {
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 @font-face {
   font-family: 'Material Icons';
