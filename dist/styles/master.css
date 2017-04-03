@@ -135,7 +135,7 @@ textarea {
 }
 .checkbox.large label,
 .radio.large label {
-  display: inline;
+  display: inline-block;
   cursor: pointer;
   position: relative;
   padding-left: 32px;
