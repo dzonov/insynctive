@@ -70,3 +70,118 @@ textarea {
         }
     }
 }
+
+.checkbox,
+.radio {
+    &.small {
+        label {
+            display: inline;
+            cursor: pointer;
+            position: relative;
+            padding-left: 24px;
+            &:before {
+                content: "";
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                margin-right: 10px;
+                position: absolute;
+                left: 0;
+                bottom: 1px;
+                background-color: #fff;
+                border: 1px solid black;
+            }
+        }
+    }
+    &.large {
+        label {
+            display: inline;
+            cursor: pointer;
+            position: relative;
+            padding-left: 32px;
+            padding-bottom: 32px;
+            &:before {
+                content: "";
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                margin-right: 10px;
+                position: absolute;
+                left: 0;
+                bottom: 1px;
+                background-color: #fff;
+                border: 1px solid black;
+            }
+        }
+    }
+}
+
+.radio {
+    &.small {
+        label {
+            &:before {
+                border-radius: 8px;
+            }
+        }
+        input[type="radio"]:checked+label:before {
+            content: "\2022";
+            color: @darkBlueHover;
+            border: 1px solid @darkBlueHover;
+            font-size: 32px;
+            text-align: center;
+            line-height: 18px;
+        }
+    }
+    &.large {
+        label {
+            &:before {
+                border-radius: 16px;
+            }
+        }
+        input[type="radio"]:checked+label:before {
+            content: "\2022";
+            color: @darkBlueHover;
+            border: 1px solid @darkBlueHover;
+            font-size: 64px;
+            text-align: center;
+            line-height: 27px;
+        }
+    }
+}
+
+.checkbox {
+    &.small {
+        label {
+            &:before {
+                border-radius: 3px;
+            }
+        }
+        input[type="checkbox"]:checked+label:before {
+            content: "\2713";
+            color: #fff;
+            border: 1px solid @darkBlueHover;
+            background-color: @darkBlueHover;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 17px;
+        }
+    }
+    &.large {
+        label {
+            &:before {
+                border-radius: 3px;
+            }
+        }
+        input[type="checkbox"]:checked+label:before {
+            content: "\2713";
+            color: #fff;
+            border: 1px solid @darkBlueHover;
+            background-color: @darkBlueHover;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 26px;
+        }
+    }
+}

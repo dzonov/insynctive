@@ -113,6 +113,95 @@ textarea {
 .select li:nth-child(2) {
   border-top: 1px solid #bdc3c7;
 }
+.checkbox.small label,
+.radio.small label {
+  display: inline;
+  cursor: pointer;
+  position: relative;
+  padding-left: 24px;
+}
+.checkbox.small label:before,
+.radio.small label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+.checkbox.large label,
+.radio.large label {
+  display: inline;
+  cursor: pointer;
+  position: relative;
+  padding-left: 32px;
+  padding-bottom: 32px;
+}
+.checkbox.large label:before,
+.radio.large label:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+.radio.small label:before {
+  border-radius: 8px;
+}
+.radio.small input[type="radio"]:checked + label:before {
+  content: "\2022";
+  color: #2980b9;
+  border: 1px solid #2980b9;
+  font-size: 32px;
+  text-align: center;
+  line-height: 18px;
+}
+.radio.large label:before {
+  border-radius: 16px;
+}
+.radio.large input[type="radio"]:checked + label:before {
+  content: "\2022";
+  color: #2980b9;
+  border: 1px solid #2980b9;
+  font-size: 64px;
+  text-align: center;
+  line-height: 27px;
+}
+.checkbox.small label:before {
+  border-radius: 3px;
+}
+.checkbox.small input[type="checkbox"]:checked + label:before {
+  content: "\2713";
+  color: #fff;
+  border: 1px solid #2980b9;
+  background-color: #2980b9;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 17px;
+}
+.checkbox.large label:before {
+  border-radius: 3px;
+}
+.checkbox.large input[type="checkbox"]:checked + label:before {
+  content: "\2713";
+  color: #fff;
+  border: 1px solid #2980b9;
+  background-color: #2980b9;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 26px;
+}
 body {
   background-color: #edf2f5;
 }
@@ -411,8 +500,9 @@ button {
   overflow: visible;
   padding: 0;
 }
-input[type="checkbox"] {
-  margin: 0;
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
 }
 textarea {
   border: none;
