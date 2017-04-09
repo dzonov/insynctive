@@ -6,16 +6,16 @@
   margin-right: 16px;
 }
 .btn.small {
-  width: 98px;
-  height: 36px;
+  width: 96px;
+  height: 32px;
 }
 .btn.medium {
-  width: 134px;
-  height: 36px;
+  width: 136px;
+  height: 32px;
 }
 .btn.large {
   width: 184px;
-  height: 36px;
+  height: 32px;
 }
 .btn.normal {
   color: #212121;

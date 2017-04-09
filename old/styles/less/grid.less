@@ -4,15 +4,15 @@ body {
 
 .container {
     max-width: 984px;
-    margin: 24px auto;
+    margin: @size24 auto;
     background-color: #fff;
     border: 1px solid @greyHover;
-    padding-bottom: 24px;
+    padding-bottom: @size24;
 }
 
 .row {
     max-width: 100%;
-    margin: 0 24px;
+    margin: 0 @size24;
     display: flex;
     justify-content: space-between;
 }
@@ -72,7 +72,7 @@ body {
 }
 
 .header {
-    padding: 16px 24px;
+    padding: @size16 @size24;
     background-color: @veryDarkBlue;
     h1 {
         color: #fff;
@@ -84,30 +84,30 @@ body {
     display: flex;
     justify-content: flex-end;
     button {
-        margin: 24px;
+        margin: @size24;
     }
 }
 
 .actions {
     .col-1 {
         width: 0;
-        padding-right: 24px;
+        padding-right: @size24;
     }
     .textBox {
         position: relative;
         input[type="text"] {
-            padding-right: 32px;
-            margin-bottom: 8px
+            padding-right: @size32;
+            margin-bottom: @size8
         }
         .select {
-            margin-bottom: 8px;
+            margin-bottom: @size8;
             li {
-                height: 32px;
+                height: @size32;
             }
         }
         i {
-            top: 36px;
-            right: 8px;
+            top: @size36;
+            right: @size8;
             position: absolute;
             color: @greyHover;
             vertical-align: middle;
@@ -119,17 +119,17 @@ body {
         i {
             margin-top: 23px;
             color: black;
-            font-size: 24px;
+            font-size: @size24;
             font-family: 'Material Icons';
         }
     }
 }
 
 .body {
-    font-size: 14px;
+    font-size: @fontSize14;
     .row {
         margin: 0;
-        padding: 16px 24px;
+        padding: @size16 @size24;
         &:nth-child(even) {
             background-color: @grey;
         }
@@ -152,7 +152,7 @@ body {
             color: @greyHover;
             vertical-align: middle;
             line-height: 1px;
-            padding-right: 24px;
+            padding-right: @size24;
             font-family: 'Material Icons';
         }
         input {
@@ -162,24 +162,24 @@ body {
 }
 
 .footer {
-    margin-top: 24px;
-    margin-right: 24px;
+    margin-top: @size24;
+    margin-right: @size24;
     display: flex;
     justify-content: flex-end;
     .pager {
-        font-size: 14px;
+        font-size: @fontSize14;
         button {
-            width: 24px;
-            height: 24px;
-            font-size: 14px;
+            width: @size24;
+            height: @size24;
+            font-size: @fontSize14;
             box-sizing: border-box;
             margin: auto;
             padding: 0px;
         }
         input {
             width: 34px;
-            height: 24px;
-            font-size: 14px;;
+            height: @size24;
+            font-size: @fontSize14;;
             border: 1px solid #bdc3c7;
             text-align: center;
             box-sizing: border-box;
