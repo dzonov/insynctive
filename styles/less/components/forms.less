@@ -1,0 +1,187 @@
+input[type="text"], input[type="password"] {
+    font-family: 'Roboto', sans-serif;
+    background-color: @grey;
+    height: @size32;
+    max-height: @size32;
+    font-size: @fontSize14;
+    padding-left: @size8;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+    background-color: @grey;
+    height: @size48;
+    font-size: @fontSize14;
+    padding: @size8;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.textBox {
+    .title {
+        font-family: 'Roboto', sans-serif;
+        max-height: @size16;
+        font-size: @fontSize12;
+        color: @greyHover;
+        margin-bottom: 4px;
+    }
+    .error {
+        font-family: 'Roboto', sans-serif;
+        max-height: @size16;
+        color: @red;
+        margin-top: 4px;
+        font-size: @fontSize12;
+        font-style: italic;
+    }
+}
+
+.select {
+    font-family: 'Roboto', sans-serif;
+    background-color: @grey;
+    max-height: @size32;
+    font-size: @fontSize14;
+    position: relative;
+    i {
+        position: absolute;
+        top: @size8;
+        right: @size8;
+        font-family: 'Material Icons';
+        cursor: default;
+    }
+    li {
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        padding: @size8;
+        background-color: @grey;
+        cursor: default;
+        list-style: none;
+        box-sizing: border-box;
+        &:not(.selected) {
+            display: none;
+            &:hover {
+                background-color: @greyHover;
+            }
+        }
+        &:nth-child(2) {
+            border-top: 1px solid @greyHover;
+        }
+    }
+}
+
+.checkbox,
+.radio {
+    &.small {
+        label {
+            display: inline;
+            cursor: pointer;
+            position: relative;
+            padding-left: @size24;
+            &:before {
+                content: "";
+                display: inline-block;
+                width: @size16;
+                height: @size16;
+                margin-right: 10px;
+                position: absolute;
+                left: 0;
+                bottom: 1px;
+                background-color: #fff;
+                border: 1px solid black;
+            }
+        }
+    }
+    &.large {
+        label {
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            padding-left: @size32;
+            padding-bottom: @size32;
+            &:before {
+                content: "";
+                display: inline-block;
+                width: @size24;
+                height: @size24;
+                margin-right: 10px;
+                position: absolute;
+                left: 0;
+                bottom: 1px;
+                background-color: #fff;
+                border: 1px solid black;
+            }
+        }
+    }
+}
+
+.radio {
+    &.small {
+        label {
+            &:before {
+                border-radius: @size8;
+            }
+        }
+        input[type="radio"]:checked+label:before {
+            content: "\2022";
+            color: @darkBlueHover;
+            border: 1px solid @darkBlueHover;
+            font-size: @size32;
+            text-align: center;
+            line-height: 18px;
+        }
+    }
+    &.large {
+        label {
+            &:before {
+                border-radius: @size16;
+            }
+        }
+        input[type="radio"]:checked+label:before {
+            content: "\2022";
+            color: @darkBlueHover;
+            border: 1px solid @darkBlueHover;
+            font-size: @size64;
+            text-align: center;
+            line-height: 27px;
+        }
+    }
+}
+
+.checkbox {
+    &.small {
+        label {
+            &:before {
+                border-radius: 3px;
+            }
+        }
+        input[type="checkbox"]:checked+label:before {
+            content: "\2713";
+            color: #fff;
+            border: 1px solid @darkBlueHover;
+            background-color: @darkBlueHover;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 17px;
+        }
+    }
+    &.large {
+        label {
+            &:before {
+                border-radius: 3px;
+            }
+        }
+        input[type="checkbox"]:checked+label:before {
+            content: "\2713";
+            color: #fff;
+            border: 1px solid @darkBlueHover;
+            background-color: @darkBlueHover;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 26px;
+        }
+    }
+}

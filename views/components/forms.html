@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+
+    <link rel="stylesheet" href="../../dist/styles/master.css">
+</head>
+
+<body style="padding: 20px; background-color: #fff;">
+    <input type="text" placeholder="Text starts here">
+
+    <br>
+    <br>
+
+    <div class="textBox">
+        <div class="title">
+            <span>Email Address</span>
+        </div>
+        <input type="text" placeholder="ljupco.sulev@hotmail.com">
+    </div>
+
+    <br>
+
+    <div class="textBox">
+        <div class="title">
+            <span>Email Address</span>
+        </div>
+        <input type="text" placeholder="ljupco.sulev@hotmail.com">
+        <div class="error">
+            <span>Error text shows here</span>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="textBox">
+        <div class="title">
+            <span>Add Note</span>
+        </div>
+        <textarea placeholder="Text Area"></textarea>
+    </div>
+
+    <br>
+
+    <div class="textBox">
+        <div class="title">
+            <span>Relationship</span>
+        </div>
+        <ul class="select">
+            <li class="selected" data-value="married">Married</li>
+            <li data-value="single">Single</li>
+            <li data-value="divorced">Divorced</li>
+            <li data-value="complicated">Complicated</li>
+            <i class="material-icons">keyboard_arrow_down</i>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="checkbox small">
+        <input id="check1" type="checkbox" name="check" value="check1">
+        <label for="check1"></label>
+        <br>
+        <input id="check2" type="checkbox" name="check" value="check2">
+        <label for="check2"></label>
+    </div>
+
+    <div class="radio small">
+        <input id="male" type="radio" name="gender" value="male">
+        <label for="male"></label>
+        <input id="female" type="radio" name="gender" value="female">
+        <label for="female"></label>
+    </div>
+
+    <br>
+
+    <div class="checkbox large">
+        <input id="check11" type="checkbox" name="check" value="check11">
+        <label for="check11"></label>
+        <br>
+        <input id="check22" type="checkbox" name="check" value="check22">
+        <label for="check22"></label>
+    </div>
+
+    <div class="radio large">
+        <input id="male2" type="radio" name="gender2" value="male2">
+        <label for="male2"></label>
+        <input id="female2" type="radio" name="gender2" value="female2">
+        <label for="female2"></label>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../../dist/scripts/master.js"></script>
+
+</body>
+
+</html>

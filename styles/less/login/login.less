@@ -1,0 +1,59 @@
+.login {
+    background-color: @veryDarkBlue;
+    >.container {
+        width: 453px;
+        padding: @size24;
+        margin: @size48 auto;
+        >.header {
+            background: none;
+            text-align: center;
+            padding: 0;
+            h2 {
+                font-size: @size24;
+                font-weight: bold;
+            }
+            p {
+                text-align: center;
+                font-size: 18px;
+            }
+        }
+        >.sub-header {
+            display: block;
+            padding-top: @size16;
+            p {
+                font-size: 18px;
+            }
+            h2 {
+                font-size: @size24;
+            }
+        }
+        >.textBox {
+            padding-top: @size16;
+        }
+        >.centered {
+            text-align: center;
+            >.btn {
+                margin-top: @size16;
+                margin-bottom: @size16;
+                &:nth-child(2) {
+                    margin-right: 0;
+                }
+            }
+        }
+        >.inline {
+            .checkbox {
+                display: inline;
+            }
+            a {
+                float: right;
+            }
+        }
+        a {
+            color: @blue;
+            text-decoration: none;
+            &:hover {
+                color: @darkBlueHover;
+            }
+        }
+    }
+}

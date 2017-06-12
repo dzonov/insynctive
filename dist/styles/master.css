@@ -1,0 +1,594 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+.btn {
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  padding: 0 16px;
+  margin-right: 16px;
+}
+.btn.small {
+  width: 96px;
+  height: 32px;
+}
+.btn.medium {
+  width: 136px;
+  height: 32px;
+}
+.btn.large {
+  width: 184px;
+  height: 32px;
+}
+.btn.normal {
+  color: #212121;
+  background-color: #ecf0f1;
+}
+.btn.normal:hover {
+  color: #212121;
+  background-color: #bdc3c7;
+}
+.btn.active {
+  color: #fff;
+  background-color: #3498db;
+}
+.btn.active:hover {
+  color: #fff;
+  background-color: #2980b9;
+}
+.btn.delete {
+  color: #fff;
+  background-color: #e74c3c;
+}
+.btn.delete:hover {
+  color: #fff;
+  background-color: #c0392b;
+}
+[disabled] {
+  cursor: not-allowed;
+  color: #bdc3c7;
+  background-color: #ecf0f1;
+}
+input[type="text"],
+input[type="password"] {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ecf0f1;
+  height: 32px;
+  max-height: 32px;
+  font-size: 14px;
+  padding-left: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+textarea {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ecf0f1;
+  height: 48px;
+  font-size: 14px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.textBox .title {
+  font-family: 'Roboto', sans-serif;
+  max-height: 16px;
+  font-size: 12px;
+  color: #bdc3c7;
+  margin-bottom: 4px;
+}
+.textBox .error {
+  font-family: 'Roboto', sans-serif;
+  max-height: 16px;
+  color: #e74c3c;
+  margin-top: 4px;
+  font-size: 12px;
+  font-style: italic;
+}
+.select {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ecf0f1;
+  max-height: 32px;
+  font-size: 14px;
+  position: relative;
+}
+.select i {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-family: 'Material Icons';
+  cursor: default;
+}
+.select li {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  padding: 8px;
+  background-color: #ecf0f1;
+  cursor: default;
+  list-style: none;
+  box-sizing: border-box;
+}
+.select li:not(.selected) {
+  display: none;
+}
+.select li:not(.selected):hover {
+  background-color: #bdc3c7;
+}
+.select li:nth-child(2) {
+  border-top: 1px solid #bdc3c7;
+}
+.checkbox.small label,
+.radio.small label {
+  display: inline;
+  cursor: pointer;
+  position: relative;
+  padding-left: 24px;
+}
+.checkbox.small label:before,
+.radio.small label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+.checkbox.large label,
+.radio.large label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 32px;
+  padding-bottom: 32px;
+}
+.checkbox.large label:before,
+.radio.large label:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+.radio.small label:before {
+  border-radius: 8px;
+}
+.radio.small input[type="radio"]:checked + label:before {
+  content: "\2022";
+  color: #2980b9;
+  border: 1px solid #2980b9;
+  font-size: 32px;
+  text-align: center;
+  line-height: 18px;
+}
+.radio.large label:before {
+  border-radius: 16px;
+}
+.radio.large input[type="radio"]:checked + label:before {
+  content: "\2022";
+  color: #2980b9;
+  border: 1px solid #2980b9;
+  font-size: 64px;
+  text-align: center;
+  line-height: 27px;
+}
+.checkbox.small label:before {
+  border-radius: 3px;
+}
+.checkbox.small input[type="checkbox"]:checked + label:before {
+  content: "\2713";
+  color: #fff;
+  border: 1px solid #2980b9;
+  background-color: #2980b9;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 17px;
+}
+.checkbox.large label:before {
+  border-radius: 3px;
+}
+.checkbox.large input[type="checkbox"]:checked + label:before {
+  content: "\2713";
+  color: #fff;
+  border: 1px solid #2980b9;
+  background-color: #2980b9;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 26px;
+}
+body {
+  background-color: #edf2f5;
+}
+.container {
+  max-width: 984px;
+  margin: 24px auto;
+  background-color: #fff;
+  border: 1px solid #bdc3c7;
+  padding-bottom: 24px;
+}
+.row {
+  max-width: 100%;
+  margin: 0 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.col-1 {
+  width: 56px;
+}
+.col-2 {
+  width: 136px;
+}
+.col-3 {
+  width: 216px;
+}
+.col-4 {
+  width: 296px;
+}
+.col-5 {
+  width: 376px;
+}
+.col-6 {
+  width: 456px;
+}
+.col-7 {
+  width: 536px;
+}
+.col-8 {
+  width: 616px;
+}
+.col-9 {
+  width: 696px;
+}
+.col-10 {
+  width: 776px;
+}
+.col-11 {
+  width: 856px;
+}
+.col-12 {
+  width: 936px;
+}
+.bottom-line {
+  width: 100%;
+  height: 1px;
+  background-color: #bdc3c7;
+}
+.header {
+  padding: 16px 24px;
+  background-color: #34495e;
+}
+.header h1 {
+  color: #fff;
+  font-size: 20px;
+}
+.sub-header {
+  display: flex;
+  justify-content: flex-end;
+}
+.sub-header button {
+  margin: 24px;
+}
+.actions .col-1 {
+  width: 0;
+  padding-right: 24px;
+}
+.actions .textBox {
+  position: relative;
+}
+.actions .textBox input[type="text"] {
+  padding-right: 32px;
+  margin-bottom: 8px;
+}
+.actions .textBox .select {
+  margin-bottom: 8px;
+}
+.actions .textBox .select li {
+  height: 32px;
+}
+.actions .textBox i {
+  top: 36px;
+  right: 8px;
+  position: absolute;
+  color: #bdc3c7;
+  vertical-align: middle;
+  line-height: 1px;
+  font-family: 'Material Icons';
+}
+.actions a i {
+  margin-top: 23px;
+  color: black;
+  font-size: 24px;
+  font-family: 'Material Icons';
+}
+.body {
+  font-size: 14px;
+}
+.body .row {
+  margin: 0;
+  padding: 16px 24px;
+}
+.body .row:nth-child(even) {
+  background-color: #ecf0f1;
+}
+.body .row [class*="col-"]:first-of-type {
+  font-weight: bold;
+}
+.body .row [class*="col-"]:nth-of-type(2) {
+  color: #3498db;
+}
+.body .row [class*="col-"]:nth-of-type(3) {
+  color: #3498db;
+}
+.body .row .col-1 {
+  width: 0;
+  padding-right: 18px;
+}
+.body .row i {
+  color: #bdc3c7;
+  vertical-align: middle;
+  line-height: 1px;
+  padding-right: 24px;
+  font-family: 'Material Icons';
+}
+.body .row input {
+  vertical-align: middle;
+}
+.footer {
+  margin-top: 24px;
+  margin-right: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer .pager {
+  font-size: 14px;
+}
+.footer .pager button {
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0px;
+}
+.footer .pager input {
+  width: 34px;
+  height: 24px;
+  font-size: 14px;
+  border: 1px solid #bdc3c7;
+  text-align: center;
+  box-sizing: border-box;
+}
+html,
+body {
+  border: 0;
+  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+input {
+  border: 0;
+}
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  box-sizing: content-box;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+  box-shadow: none;
+}
+select {
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v22/2fcrYFNaTjcS6g4U3t-Y5StnKWgpfO2iSkLzTz-AABg.ttf) format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+}
+.login {
+  background-color: #34495e;
+}
+.login > .container {
+  width: 453px;
+  padding: 24px;
+  margin: 48px auto;
+}
+.login > .container > .header {
+  background: none;
+  text-align: center;
+  padding: 0;
+}
+.login > .container > .header h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.login > .container > .header p {
+  text-align: center;
+  font-size: 18px;
+}
+.login > .container > .sub-header {
+  display: block;
+  padding-top: 16px;
+}
+.login > .container > .sub-header p {
+  font-size: 18px;
+}
+.login > .container > .sub-header h2 {
+  font-size: 24px;
+}
+.login > .container > .textBox {
+  padding-top: 16px;
+}
+.login > .container > .centered {
+  text-align: center;
+}
+.login > .container > .centered > .btn {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.login > .container > .centered > .btn:nth-child(2) {
+  margin-right: 0;
+}
+.login > .container > .inline .checkbox {
+  display: inline;
+}
+.login > .container > .inline a {
+  float: right;
+}
+.login > .container a {
+  color: #3498db;
+  text-decoration: none;
+}
+.login > .container a:hover {
+  color: #2980b9;
+}
