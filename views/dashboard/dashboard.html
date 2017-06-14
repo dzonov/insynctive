@@ -10,9 +10,64 @@
     <link rel="stylesheet" href="../../dist/styles/master.css">
 </head>
 
-<body>
+<body class="dashboard">
+    <div class="container">
+        <div class="info">
+            <div class="personal-card">
+                <span>Personal card template</span>
+            </div>
+            <div class="indicators">
+                <div class="indicator">
+                    <h2>75</h2>
+                    <div class="indicator-footer">
+                        <span>Open Tasks</span>
+                    </div>
+                </div>
+                <div class="indicator">
+                    <h2>75</h2>
+                    <div class="indicator-footer">
+                        <span>Overdue Tasks</span>
+                    </div>
+                </div>
+                <div class="indicator">
+                    <h2>20</h2>
+                    <div class="indicator-footer">
+                        <span>Open Questions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <p>Open Enrollment session for Jul 2017-Jun 2018 opened between 01/01/2017 and 06/30/2017</p>
+            <div class="actions">
+                <div class="action">
+                    <div class="info">
+                        <h2>1</h2>
+                        <p>Update your information <br>We need to collect info about your address and dependents</p>
+                        <i class="material-icons">keyboard_arrow_right</i>
+                    </div>
+                    <button class="btn active small">Update</button>
+                </div>
+                <div class="action">
+                    <div class="info">
+                        <h2>2</h2>
+                        <p>Elect your benefits <br>These will be your benefits for the covered period</p>
+                        <i class="material-icons">keyboard_arrow_right</i>
+                    </div>
+                    <button class="btn small" disabled>Not Started</button>
+                </div>
+                <div class="action">
+                    <div class="info">
+                        <h2>3</h2>
+                        <p>Fill &amp; sign your forms <br>There are the forms for you to <br>fill and sign</p>
+                    </div>
+                    <button class="btn small" disabled>Not Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="../../dist/scripts/master.js"></script>
 
 </body>

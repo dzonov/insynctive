@@ -1,0 +1,115 @@
+.dashboard {
+    background-color: @veryDarkBlue;
+    >.container {
+        padding: @size24 @size24 0 @size24;
+        >.info {
+            display: flex;
+            >.personal-card {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 336px;
+                height: 216px;
+                background-color: @blue;
+                color: @backgroundColor;
+                margin-right: @size16;
+            }
+            >.indicators {
+                background-color: @grey;
+                width: 100%;
+                height: 216px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                >.indicator {
+                    width: 150px;
+                    height: 100px;
+                    background-color: @green;
+                    margin-right: @size16;
+                    color: @backgroundColor;
+                    text-align: center;
+                    >.indicator-footer {
+                        background-color: @darkGreen;
+                        padding: 2px;
+                    }
+                    &:hover {
+                        background-color: @darkGreen;
+                        >.indicator-footer {
+                            background-color: @green;
+                        }
+                    }
+                    &:nth-child(2) {
+                        background-color: @red;
+                        >.indicator-footer {
+                            background-color: @darkRedHover;
+                            padding: 2px;
+                        }
+                        &:hover {
+                            background-color: @darkRedHover;
+                            >.indicator-footer {
+                                background-color: @red;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        background-color: @greyHover;
+                        >.indicator-footer {
+                            background-color: @darkGrey;
+                            padding: 2px;
+                        }
+                        &:hover {
+                            background-color: @darkGrey;
+                            >.indicator-footer {
+                                background-color: @greyHover;
+                            }
+                        }
+                    }
+                    >h2 {
+                        font-size: @size48;
+                    }
+                }
+            }
+        }
+        .actions {
+            display: flex;
+            width: 100%;
+            padding: 0 @size24;
+            .action {
+                display: flex;
+                flex-direction: column;
+                width: 328px;
+                margin-right: @size16;
+                .info {
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    h2 {
+                        font-size: 48px;
+                        margin-right: @size16;
+                    }
+                    i {
+                        font-size: 48px;
+                    }
+                    p {
+                        &:first-line {
+                            font-weight: bold;
+                        }
+                    }
+                }
+                button {
+                    align-self: center;
+                    margin-top: @size24;
+                    margin-right: 0;
+                }
+                &:nth-child(3) {
+                    margin-right: 0;
+                }
+            }
+        }
+        p:nth-child(1) {
+            text-align: center;
+            font-weight: bold;
+            padding: @size24;
+        }
+    }
+}

@@ -365,6 +365,119 @@ body {
   text-align: center;
   box-sizing: border-box;
 }
+.dashboard {
+  background-color: #34495e;
+}
+.dashboard > .container {
+  padding: 24px 24px 0 24px;
+}
+.dashboard > .container > .info {
+  display: flex;
+}
+.dashboard > .container > .info > .personal-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 336px;
+  height: 216px;
+  background-color: #3498db;
+  color: #edf2f5;
+  margin-right: 16px;
+}
+.dashboard > .container > .info > .indicators {
+  background-color: #ecf0f1;
+  width: 100%;
+  height: 216px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard > .container > .info > .indicators > .indicator {
+  width: 150px;
+  height: 100px;
+  background-color: #2ecc71;
+  margin-right: 16px;
+  color: #edf2f5;
+  text-align: center;
+}
+.dashboard > .container > .info > .indicators > .indicator > .indicator-footer {
+  background-color: #27ae60;
+  padding: 2px;
+}
+.dashboard > .container > .info > .indicators > .indicator:hover {
+  background-color: #27ae60;
+}
+.dashboard > .container > .info > .indicators > .indicator:hover > .indicator-footer {
+  background-color: #2ecc71;
+}
+.dashboard > .container > .info > .indicators > .indicator:nth-child(2) {
+  background-color: #e74c3c;
+}
+.dashboard > .container > .info > .indicators > .indicator:nth-child(2) > .indicator-footer {
+  background-color: #c0392b;
+  padding: 2px;
+}
+.dashboard > .container > .info > .indicators > .indicator:nth-child(2):hover {
+  background-color: #c0392b;
+}
+.dashboard > .container > .info > .indicators > .indicator:nth-child(2):hover > .indicator-footer {
+  background-color: #e74c3c;
+}
+.dashboard > .container > .info > .indicators > .indicator:nth-child(3) {
+  background-color: #bdc3c7;
+}
+.dashboard > .container > .info > .indicators > .indicator:nth-child(3) > .indicator-footer {
+  background-color: #7f8c8d;
+  padding: 2px;
+}
+.dashboard > .container > .info > .indicators > .indicator:nth-child(3):hover {
+  background-color: #7f8c8d;
+}
+.dashboard > .container > .info > .indicators > .indicator:nth-child(3):hover > .indicator-footer {
+  background-color: #bdc3c7;
+}
+.dashboard > .container > .info > .indicators > .indicator > h2 {
+  font-size: 48px;
+}
+.dashboard > .container .actions {
+  display: flex;
+  width: 100%;
+  padding: 0 24px;
+}
+.dashboard > .container .actions .action {
+  display: flex;
+  flex-direction: column;
+  width: 328px;
+  margin-right: 16px;
+}
+.dashboard > .container .actions .action .info {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.dashboard > .container .actions .action .info h2 {
+  font-size: 48px;
+  margin-right: 16px;
+}
+.dashboard > .container .actions .action .info i {
+  font-size: 48px;
+}
+.dashboard > .container .actions .action .info p:first-line {
+  font-weight: bold;
+}
+.dashboard > .container .actions .action button {
+  align-self: center;
+  margin-top: 24px;
+  margin-right: 0;
+}
+.dashboard > .container .actions .action:nth-child(3) {
+  margin-right: 0;
+}
+.dashboard > .container p:nth-child(1) {
+  text-align: center;
+  font-weight: bold;
+  padding: 24px;
+}
 html,
 body {
   border: 0;
